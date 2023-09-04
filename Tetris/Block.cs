@@ -21,7 +21,7 @@ namespace Tetris
 
         }
 
-        public IEnumerable<Position> TilePositons()
+        public IEnumerable<Position> TilePositions()
         {
             foreach (Position p in Tiles[rotationState])
             {
