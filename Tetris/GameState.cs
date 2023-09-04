@@ -64,6 +64,16 @@ namespace Tetris
 
         public void MoveBlockLeft()
         {
+            CurrentBlock.Move(0, -1);
+
+            if (!BlockFits())
+            {
+                CurrentBlock.Move(0, 1);
+            }
+        }
+
+        public void MoveBlockRight()
+        {
             CurrentBlock.Move(0, 1);
 
             if (!BlockFits())
